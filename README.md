@@ -1,2 +1,35 @@
 # proyecto-java-AlvaroMartinezBecerra
 proyecto-java-AlvaroMartinezBecerra created by GitHub Classroom
+## Estructura de las carpetas del proyecto
+
+* **/src**: Directorio con el código fuente.
+  * **fp.bitcoin**: Paquete que contiene los tipos del proyecto.
+  * **fp.bitcoin.test**: Paquete que contiene las clases de test del proyecto.
+  * **fp.utiles**:  Paquete que contiene las clases de utilidad. 
+* **/data**: Contiene el dataset del proyecto.
+    * **bitcoin.csv**: Archivo csv que contiene datos de diferentes transacciones.
+    
+## Estructura del *dataset*
+
+El dataset original BTC-EUR se puede obtener de la URL [https://www.kaggle.com/datasets/hamdinizar/bitcoin](https://www.kaggle.com/datasets/hamdinizar/bitcoin). Originalmente tiene 7 columnas y cada fila contiene datos sobre una  transacción. 
+
+* **date**: de tipo DateTime,  indica el día que fue hecha cada transacción.
+* **Open**: de tipo Double, indica la cantidad con la que se abrió la transacción.
+* **High**: de tipo Double, indica el máximo al que llegó cada transacción.
+* **Low**: de tipo Double, indica el mínimo al que llegó cada transacción.
+* **Close**: de tipo Double, indica la cantidad con la que se cerró la transacción.
+* **Adj Close**: de tipo Double.
+* **Volume*: de tipo Long, indica la cantidad que volumen que ha albergado dicha transacción.
+  
+
+**Constructores**: 
+
+- C1: Tiene un parámetro por cada propiedad básica del tipo.
+
+**Restricciones**:
+ 
+- R1: el volume no puede estar vacío
+- R2: la fecha no puede estar vacía
+
+
+**Criterio de ordenación**: Por fecha y volumen
